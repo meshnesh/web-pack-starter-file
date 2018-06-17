@@ -1,8 +1,0 @@
-node_modules/
-.idea/
-.workspace
-.DS_Store
-npm-debug.log
-.vscode/
-.gitignore
-dist/
