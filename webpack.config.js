@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const path = require('path');
 const port = process.env.PORT || 9000
+const host = process.env.HOST || '0.0.0.0'
 
 module.exports = {
     entry: './src/app.js',
@@ -23,7 +24,7 @@ module.exports = {
         contentBase: path.join(__dirname, "dist"),
         compress: true,
         port: port,
-        host: '0.0.0.0',
+        host: host,
         stats: 'errors-only',
         open: true
     },
