@@ -26,7 +26,8 @@ module.exports = {
         port: port,
         host: host,
         stats: 'errors-only',
-        open: true
+        open: true,
+        disableHostCheck: true
     },
     plugins: [
         new HtmlWebpackPlugin({
