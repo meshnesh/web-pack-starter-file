@@ -23,6 +23,7 @@ module.exports = {
         contentBase: path.join(__dirname, "dist"),
         compress: true,
         port: port,
+        host: '0.0.0.0',
         stats: 'errors-only',
         open: true
     },
